@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "137425548681",
+    "firebase_url": "https://streeplus.firebaseio.com",
+    "project_id": "streeplus",
+    "storage_bucket": "streeplus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137425548681:android:d665044cfabf6344f91d58",
+        "android_client_info": {
+          "package_name": "com.example.stree"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "137425548681-984osshbprjpshk34h5rpdid2ov3ftbo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.stree",
+            "certificate_hash": "78683d108f2b795d14d3de2c5a34ca7ae1ba3bcc"
+          }
+        },
+        {
+          "client_id": "137425548681-4o5ttmlshq28p45mhlfad80uhddh77q0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9hQQ6jBjyV7mj_jJyAgcx3K4KumS9fZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "137425548681-4o5ttmlshq28p45mhlfad80uhddh77q0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

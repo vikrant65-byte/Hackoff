@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">WPlus</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Welcome">Welcome</string>
+    <string name="Login">Login</string>
+    <string name="Register">Register</string>
+    <string name="Profile">Profile</string>
+    <string name="HomeMenu">Home</string>
+
+    <string name="Email3">Email</string>
+    <string name="Phone3">Phone</string>
+    <string name="Name3">NAme</string>
+
+
+    <string name="ProfileMenu">Profile</string>
+    <string name="UserMenu">User</string>
+
+
+    <string name="Email_hint">Email</string>
+    <string name="Password_hint">Password</string>
+    <string name="Phone_hint">Phone number</string>
+    <string name="address_hint">Address</string>
+    <string name="Emai_hint">Email</string>
+
+    <string name="Registered">Already Have Account? Login</string>
+    <string name="No_account"> Not Have Account? Register</string>
+    <string name="Forgot_password">Forgot Password? Reset</string>
+    <string name="Registere">Already Have Account? Login</string>
+    <string name="Regiered">Already Have Account? Login</string>
+
+    <string name="Logoutaction">Logout</string>
+    <string name="Searchaction">Search</string>
+    <string name="getHelp">Help</string>
+    <string name="MyBook">MyBook</string>
+
+    <string name="SelfDefence_Tips">Self Defence Tips</string>
+    <string name="ExcerciesRules">Exercise Tips</string>
+
+
+</resources>
