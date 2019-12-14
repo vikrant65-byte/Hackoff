@@ -8,16 +8,16 @@ import com.github.barteksc.pdfviewer.PDFView;
 
 public class SelfDefenceActivity extends AppCompatActivity {
 
-    PDFView exercises;
+    PDFView selfDefence;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_self_defence);
 
-        exercises=(PDFView)findViewById(R.id.SelfDefence);
+        selfDefence =(PDFView)findViewById(R.id.SelfDefence);
 
-        exercises.fromAsset("gym.pdf").load();
+        selfDefence.fromAsset("Self-Defence.pdf").load();
 
 
     }

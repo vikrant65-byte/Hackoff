@@ -20,37 +20,59 @@ import android.widget.ImageButton;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 
 public class HomeFragment extends Fragment{
 
+    ImageButton exercises,selfDefence;
+
     FirebaseAuth firebaseAuth;
-
-    public HomeFragment() {
-        // Required empty public constructor
-    }
-
+    FirebaseUser user;
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        firebaseAuth = FirebaseAuth.getInstance();
+        super.onCreate(savedInstanceState);
+
+        exercises = view.findViewById(R.id.excersise);
+        selfDefence = view.findViewById(R.id.SelfDefence);
+
+        exercises.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),ExerciseActivity.class));
+            }
+        });
+
+        selfDefence.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),SelfDefenceActivity.class));
+            }
+        });
+
 
         return view;
+
     }
 
+
     private void checkUserStatus(){
+
         FirebaseUser user = firebaseAuth.getCurrentUser();
         if (user != null){
+
+            //mProfilleTv.setText(user.getEmail());
             // mProfileTv.setText(user.getEmail());
         }
         else {
 
-            startActivity(new Intent(getActivity(), MainActivity.class));
+            startActivity(new Intent(getActivity(),  MainActivity.class));
             getActivity().finish();
         }
     }
@@ -58,58 +80,27 @@ public class HomeFragment extends Fragment{
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         setHasOptionsMenu(true);
-
         super.onCreate(savedInstanceState);
     }
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-
         inflater.inflate(R.menu.menu_main, menu);
-        super.onCreateOptionsMenu(menu,inflater);
+        super.onCreateOptionsMenu(menu, inflater);
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         int id = item.getItemId();
-        if (id==R.id.action_logout){
+        if (id == R.id.action_logout){
             firebaseAuth.signOut();
             checkUserStatus();
         }
+
         return super.onOptionsItemSelected(item);
     }
 
-    public class HomeFragment1 extends AppCompatActivity{
-        ImageButton exercises,selfDefence;
-        @Override
-        protected void onCreate(Bundle savedInstanceState){
-
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.fragment_home);
-
-            exercises = (ImageButton) findViewById(R.id.exercise);
-            selfDefence = (ImageButton) findViewById(R.id.SelfDefence);
-
-            exercises.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent i  = new  Intent(HomeFragment1.this,ExerciseActivity.class);
-                    startActivity(i);
-
-                }
-            });
-
-            selfDefence.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent i2  = new  Intent(HomeFragment1.this,SelfDefenceActivity.class);
-                    startActivity(i2);
-
-                }
-            });
-
-        }
 
 }
-}
+

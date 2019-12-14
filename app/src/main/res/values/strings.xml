@@ -2,12 +2,14 @@
     <string name="app_name">WPlus</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">MyBooks</string>
     <string name="Welcome">Welcome</string>
     <string name="Login">Login</string>
     <string name="Register">Register</string>
     <string name="Profile">Profile</string>
     <string name="HomeMenu">Home</string>
+    <string name="ChatMenu">Chats</string>
+
 
     <string name="Email3">Email</string>
     <string name="Phone3">Phone</string>
@@ -15,6 +17,7 @@
 
 
     <string name="ProfileMenu">Profile</string>
+    <string name="ProfileMenu2">Profile</string>
     <string name="UserMenu">User</string>
 
 
@@ -37,6 +40,7 @@
 
     <string name="SelfDefence_Tips">Self Defence Tips</string>
     <string name="ExcerciesRules">Exercise Tips</string>
+    <string name="title_activity_user_maps">Map</string>
 
 
 </resources>

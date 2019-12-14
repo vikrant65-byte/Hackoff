@@ -9,7 +9,6 @@ import com.github.barteksc.pdfviewer.PDFView;
 public class ExerciseActivity extends AppCompatActivity {
 
     PDFView exercises;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
